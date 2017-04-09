@@ -8,41 +8,141 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/contact.css">
 </head>
 <body>
-	<style>
-		body {
-			padding-top: 100px;
-		}	
-		.media-body {
-			width="300" height="200";
-			outline: :1px solid black;
-		}
-	</style>
-	<nav class="navbar navbar-inverse navbar-fixed-top">
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded "false" aria-controls="navbar">
-					<span class="sr-only">Toggle navigation</span>
+	<header>
+		<nav class="navbar navbar-inverse">
+			<div class="container fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#">Urban Zen Project</a>
+					<a href="contact.html">
+						<img src="images/uz_logo.png" alt="uz_logo" id="uz_logo ">
+					</a>
+				</div>
+				<div id="myNavbar" class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+					</ul>
+				</div>
 			</div>
-			<div id="navbar" class="collapse navbar-collapse">
-				<ul class="navbar-nav">
-					<li class="active"><a href="index.html">Home</a></li>
-					<li><a href="contact.html">Contact</a></li>
-				</ul>
-			</div>
-			<!--/.nav collpase-->
+		</nav>
+	</header>
+	<style>
+		body {
+			padding-top: 80px;
+		}
+	</style>
+		<div style="background-color: !important" class="jumbotron text-center">
+			<h1><span style="text-transform: uppercase;">haiti artisan project</span></h1>
+			<p><span style="text-transform: uppercase;">urban zen foundation. 703 greenwhich street, 3rd Floor, new york, n.y. 10014 email:info@urbanzen.org phone:212-414-8520</span></p>
 		</div>
-	</nav>
-	<div class="jumbotron text-center">
-		<h1>Haiti Aritisan Project</h1>
-		<p>Contact: Urban Zen Foundation. 703 Greenwhich Street,3rd Floor, New York, N.Y. 10014 Email:info@urbanzen.org Phone:212-414-8520
-	</div>
+	<fieldset>
+		<form action="/action_pag.php" class="form-horizontal">
+			<div class="form-group">
+				<label for="firstname" class="col-sm-3 control-label">First Name:</label>
+				<div class="col-sm-6">
+					<input type="text" name="fname" autofucus required id="First Name" placeholder="First Name" class="form-control">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="last name" class="col-sm-3 control-label">Last Name:</label>
+				<div class="col-sm-6">
+					<input type="text" name="lname" placeholder="Last Name" class="form-control">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="email" class="col-sm-3 control-label">Email:</label>
+				<div class="col-sm-6">
+					<input type="text" name="email" placeholder="Email" class="form-control">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="homephone" class="col-sm-3 control-label">Home Phone:</label>
+				<div class="col-sm-6">
+					<input type="tel" id="homephone" placeholder="Home Phone" pattern="\([0-9] {3}\) [0-9]{3}-[0-9]{4}" class="form-control">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="workphone" class="col-sm-3 control-label">Work Phone:</label>
+				<div class="col-sm-6">
+					<input type="tel" id="workphone" placeholder="Work Phone" pattern="\([0-9] {3}\) [0-9]{3}-[0-9]{4}" class="form-control">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="cell phone" class="col-sm-3 control-label">Cell Phone:</label>
+				<div class="col-sm-6">
+					<input type="tel" id="cellphone" placeholder="Cell Phone" pattern="\([0-9] {3}\) [0-9]{3}-[0-9]{4}" class="form-control">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="address1" class="col-sm-3 control-label">Address (line 1):</label>
+				<div class="col-sm-6">
+					<input type="text" placeholder="Address (line 1)" class="form-control">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="address2" class="col-sm-3 control-label">Address (line 2):</label>
+				<div class="col-sm-6">
+					<input type="text" placeholder="Address (line 2)" class="form-control">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="City" class="col-sm-3 control-label">City:</label>
+				<div class="col-sm-6">
+					<input type="text" text id="city" placeholder="City" class="form-control">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="State" class="col-sm-3 control-label">State:</label>
+				<div class="col-sm-6">
+					<select id="State" placeholder="State" class="form-control">
+			<option>State</option>
+			<option>Alabama</option>
+			 <option>...</option>
+			<option>Washinton</option>
+				</select>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="zip" class="col-sm-3 control-label">Zip Code:</label>
+				<div class="col-sm-6">
+					<input type="number" text id="zip" placeholder="Zip Code" class="form-control">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="country" class="col-sm-3 control-label">Country:</label>
+				<div class="col-sm-6">
+					<select id="country" placeholder="Country" class="form-control">
+			<option>United States</option>
+			 <option>...</option>
+			<option>Canada</option>
+				</select>
+				</div>
+			</div><br>
+			<div class="form-group">
+				<label for="message" class="col-sm-3 control-label">Send a message</label>
+				<div class="col-sm-6">
+					<textarea name="Send A Message:" cols="50" rows="4">Enter Your Message...</textarea>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="Submit" class="col-md-6 control-label"></label>
+				<div class="col-md-6">
+					<input type="Submit" value="Submit" class="form control">
+				</div>
+			</div>
+		</form>
+	</fieldset>
+		<div style="background-color: !important" class="jumbotron text-center">
+			<p><span style="text-transform: uppercase;">Interested in learning more or supporting the Urban Zen foundation or one of its inititiaves?? Please complete the form above or contact: urban zen foundation.</span>
+		</div>
 	<footer>
 		<div id="container" class="footer" height="100%">
 			<nav role="navigation">
@@ -54,3 +154,6 @@
 			</nav>
 		</div>
 	</footer>
+</body>
+
+</html>

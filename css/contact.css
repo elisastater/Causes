@@ -1,88 +1,127 @@
-
-
 /*Custom Fonts*/
 /*Regular Text*/
- 
 
 @font-face {
-    font-family: 'PTSans';
-    src: url('../fonts/PTC55F-webfont.eot');
-    src: url('../PTC55F-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../PTC55F-webfont.woff') format('woff'),
-         url('../PTC55F-webfont.ttf') format('truetype'),
-    font-weight: normal;
-    font-style: normal;
-
+	font-family: 'PTSans';
+	src: url('../fonts/PTC55F-webfont.eot');
+	src: url('../fonts/PTC55F-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/PTC55F-webfont.woff') format('woff'), url('../fonts/PTC55F-webfont.ttf') format('truetype'), font-weight: normal;
+	font-style: normal;
 }
+
+
 /*Italic Text*/
-@font-face {
-    font-family: 'PTSans';
-    src: url('../fonts/PTS56F-webfont.eot');
-    src: url('../PTS56F-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../PTS56F-webfont.woff') format('woff'),
-         url('../PTS56F-webfont.ttf') format('truetype'),
-    font-weight: normal;
-    font-style: italic;
 
+@font-face {
+	font-family: 'PTSans';
+	src: url('../fonts/PTS56F-webfont.eot');
+	src: url('../fonts/PTS56F-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/PTS56F-webfont.woff') format('woff'), url('../fonts/PTS56F-webfont.ttf') format('truetype'), url('../fonts/PTS56F-webfont.svg#pt_sansitalic') format('svg');
+	font-weight: normal;
+	font-style: italic;
 }
+
 
 /*Bold Text*/
+
 @font-face {
-    font-family: 'PTSans';
-    src: url('../fonts/PTS75F-webfont.eot');
-    src: url('../PTS75F-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../PTS75F-webfont.woff') format('woff'),
-         url('../PTS75F-webfont.ttf') format('truetype'),
-    font-weight: normal;
-    font-style: bold;
-
+	font-family: 'PTSans';
+	src: url('../fonts/PTS75F-webfont.eot');
+	src: url('../fonts/PTS75F-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/PTS75F-webfont.woff') format('woff'), url('../fonts/PTS75F-webfont.ttf') format('truetype'), url('../fonts/PTS75F-webfont.svg#pt_sansbold') format('svg');
+	font-weight: normal;
+	font-style: bold;
 }
-
 
 body {
 	padding-top: 80px;
 	padding-top: 80px;
 	/*gradient*/
-	background:#FF822E;
+	background: #FF822E;
 	*background-image: linear-gradient(to top, #FF6517, #FF822E, #B9BBBA);
 	background-image: linear-gradient(to bottom, #FF6517, #FF822E, #B9BBBA);
-	background:	-moz-linear-gradient(top,#FF6517, #FF822E, #B9BBBA);
-	background: -webkit-linear-gradient (left top, left bottom,
-	color-stop(0%,#FF6517), color-stop(100%,#EBE8E6);
-	background: -o-linear-gradient(top,#FF6517 0%, #B9BBBA 100%);
-	background: -ms-linear-gradient(top,#FF6517 0%, #B9BBBA 100%);
-		
+	background: -moz-linear-gradient(top, #FF6517, #FF822E, #B9BBBA);
+	background: -webkit-linear-gradient (left top, left bottom, color-stop(0%, #FF6517), color-stop(100%, #EBE8E6);
+	background: -o-linear-gradient(top, #FF6517 0%, #B9BBBA 100%);
+	background: -ms-linear-gradient(top, #FF6517 0%, #B9BBBA 100%);
 }
 
 jumbotron text-center: {
-		background: #B9BBBA;
-		text-transform: capitalize;
-		font-family: 'PTSans';
-		text-align: center;
-		font-size: 50px;
-		font-style: italic;
-		font-weight: bold;
-		text-transform: capitalize;
-	
+	background: #B9BBBA;
+	text-transform: capitalize;
+	font-family: 'PTSans';
+	text-align: center;
+	font-size: 50px;
+	font-style: italic;
+	font-weight: bold;
+	text-transform: capitalize;
 }
-	
+
 h1 {
-		font-family: 'PTSans';
-		font-style: italic;
-		font-weight: bold;
+	font-family: 'PTSans';
+	font-style: italic;
+	font-weight: bold;
 }
 
 p {
-		text-transform: capitalize;
+	text-transform: capitalize;
+	font-family: 'PTSans';
+	font-style: italic;
 }
 
-input [type=text], text {
-		-webkit-transition: all 0.30s ease-in-out;
-		-moz-transition: all 0.30s ease-in-out;
-		-ms-transition: all 0.30s ease-in-out;
-		-o-transition: all 0.30s ease-in-out;
-		outline: none;
-		padding: 3 px 0px 3px 3px;
-		margin: 5px 1 px 3px 0px;
-		border: 2px solid #DDDDDD;
+input [type=text] text {
+	-webkit-transition: all 0.20s ease-in-out;
+	-moz-transition: all 0.20s ease-in-out;
+	-ms-transition: all 0.20s ease-in-out;
+	-o-transition: all 0.20s ease-in-out;
+	outline: none;
+	padding: 3 px 0px 3px 3px;
+	margin: 5px 1 px 3px 0px;
+	border: 2px solid #DDDDDD;
+	font-family: 'PTSans';
+	font-style: italic;
+}
+
+label {
+	font-family: 'PTSans';
+	font-style: italic;
+}
+
+
+/*
+#uz_logo {
+	from{
+		-webkit-transform:rotate(0) scale(.5);
+		left:120%;
+	}
+	50%{
+		-webkit-transform: rotate(-720g) scale(1);
+		left: 0;
+	}
+	to {
+		-webkit-transform: rotate(0) scale(1);
+		
+	}
+}
+#uz_logo{
+	-webkit-animation: logo 3s;
+	animation: logo 3s;
+}
+from{
+		-webkit-transform:rotate(0) scale(.5);
+		left:120%;
+	}
+	50%{
+		-webkit-transform: rotate(-720g) scale(1);
+		left: 0;
+	}
+	to {
+		-webkit-transform: rotate(0) scale(1);
+		
+	}
+
+@keyframes logo {
+	from {transform: rotate(0) scale(.5);
+	left:0;
+	}
+	to {
+	 transfrom: rotate(0) scale(1);
+	}
 }

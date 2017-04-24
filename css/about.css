@@ -1,45 +1,37 @@
-
-
 /*Custom Fonts*/
+
+
 /*Regular Text*/
- 
 
 @font-face {
-    font-family: 'PTSans';
-    src: url('../fonts/PTC55F-webfont.eot');
-    src: url('../fontsPTC55F-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/PTC55F-webfont.woff') format('woff'),
-         url('../fonts/PTC55F-webfont.ttf') format('truetype'),
-    font-weight: normal;
-    font-style: normal;
-
+	font-family: 'PTSans';
+	src: url('../fonts/PTC55F-webfont.eot');
+	src: url('../fonts/PTC55F-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/PTC55F-webfont.woff') format('woff'), url('../fonts/PTC55F-webfont.ttf') format('truetype'), font-weight: normal;
+	font-style: normal;
 }
+
+
 /*Italic Text*/
-@font-face {
-    font-family: 'PTSans';
-    src: url('../fonts/PTS56F-webfont.eot');
-    src: url('../fontsPTS56F-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/PTS56F-webfont.woff') format('woff'),
-         url('../fonts/PTS56F-webfont.ttf') format('truetype'),
-         url('../fonts/PTS56F-webfont.svg#pt_sansitalic') format('svg');
-    font-weight: normal;
-    font-style: italic;
 
+@font-face {
+	font-family: 'PTSans';
+	src: url('../fonts/PTS56F-webfont.eot');
+	src: url('../fontsPTS56F-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/PTS56F-webfont.woff') format('woff'), url('../fonts/PTS56F-webfont.ttf') format('truetype'), url('../fonts/PTS56F-webfont.svg#pt_sansitalic') format('svg');
+	font-weight: normal;
+	font-style: italic;
 }
+
 
 /*Bold Text*/
+
 @font-face {
-    font-family: 'PTSans';
-    src: url('../fonts/PTS75F-webfont.eot');
-    src: url('../fonts/PTS75F-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/PTS75F-webfont.woff') format('woff'),
-         url('../fonts/PTS75F-webfont.ttf') format('truetype'),
-         url('../fonts/PTS75F-webfont.svg#pt_sansbold') format('svg');
-    font-weight: normal;
-    font-style: bold;
-	
-}	
-				
+	font-family: 'PTSans';
+	src: url('../fonts/PTS75F-webfont.eot');
+	src: url('../fonts/PTS75F-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/PTS75F-webfont.woff') format('woff'), url('../fonts/PTS75F-webfont.ttf') format('truetype'), url('../fonts/PTS75F-webfont.svg#pt_sansbold') format('svg');
+	font-weight: normal;
+	font-style: bold;
+}
+
 h1 {
 	font-family: 'PTSans';
 	font-style: italic;
@@ -48,48 +40,48 @@ h1 {
 	text-transform: capitalize;
 }
 
-p {	font-family: 'PTSans';
+p {
+	font-family: 'PTSans';
 	font-style: normal;
 	font-weight: bold;
 	font-stretch: expanded;
 	font-size: 20px;
 }
-			
-body {
 
+h2 {
+	font-family: 'PTSans';
+	font-style: italic;
+	font-weight: bold;
+	font-stretch: expanded;
+	text-transform: capitalize;
+	font-size: 80px;
 }
-	
 
 container {
-	padding:0;
+	padding: 0;
 	border: none;
-	
 }
-	
-h4{
+
+h4 {
 	text-align: top;
-	position:inherit;
+	position: inherit;
 	top: 0px;
-	font-family: 'PTSans'
-	font weight: bold;
+	font-family: 'PTSans' font weight: bold;
 	font-style: italic;
 	text-align: center;
-	font-size: 25px;	
+	font-size: 25px;
 	text-transform: uppercase;
-	
 }
 
 p {
-	vertical-align: center;
-	text-align: center;
-	position: inherit;
-	top:25px;
-
+	vertical-align: top;
+	text-align-last: inherit position: inherit;
+	top: -150px;
 }
 
 .media {
-	font-family; 'PTSans':
-	font-size: 36px;
+	font-family;
+	'PTSans': font-size: 36px;
 	font-style: normal;
 	font-weight: bold;
 	text-align: center;
@@ -102,33 +94,118 @@ p {
 	border: 3px solid;
 	border-color: black;
 	border-radius: 10px;
-	background-color: ;
 	padding: 2px 2px 0 5px;
 	text-transform: capitalize;
 }
-		
+
 .media-left {
 	margin: 2em auto 2em auto;
 	border-collapse: auto;
-	border: 5px solid;
+	/*border: 3px solid;
 	border-color: 5E7C88;
-	border-radius: 10px;
-	padding: 0px 0px 0px 0px;
-	box-shadow: 4px 6px 8px rgba (0,0,0,.75);
-	position: inherit:
-}	
-
-		
+	border-radius: 10px;*/
+	padding: 3px 0px 0px 0px;
+	box-shadow: 4px 6px 8px rgba (0, 0, 0, .75);
+	position: inherit;
+	top: 50%;
+	align-content: center;
+	
+}
 .media-right {
 	margin: 2em auto 2em auto;
+	border: none:
 	border-collapse: auto;
-	border: 5px solid;
+	/*border: 3px solid;
 	border-color: 5E7C88;
-	border-radius: 10px;
-	padding: 0px 0px 0px 0px;
-	box-shadow: 4px 6px 8px rgba (0,0,0,.75);
+	border-radius: 10px;*/
+	padding: 3px 0px 0px 0px;
+	box-shadow: 4px 6px 8px rgba (0, 0, 0, .75);
 	position: inherit;
 }
+nav a:hover {
+	-webkit-transform: scale(2);
+	-ms-transform: scale(2);
+	transform: scale(2);
+	background-color: none;
+}
+nav a {
+	-webkit-transition: -webkit-transform .5s;
+	background-color 1s ease-in .5s;
+	transition: transform .5s;
+	background-color 1s ease-in .5s;
+}
+
+/*spinner*/
+#loader {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	z-index: 1;
+	width: 150x;
+	height: 150px;
+	margin: -75px 0 0 -75px;
+	border-right: 16px solid white;
+	border-radius: 50%;
+	border-top: 16px solid orange;
+	width: 120px;
+	height: 120px;
+	-webkit-animation: spin 1s linear infinite;
+	animation: spin 1s linear infinite;
+	border-bottom: 16px solid white;
+	border-left: 16px solid black;
+}
+
+}
+@-webkit-keyframes spin {
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
+}
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+	position: relative;
+	-webkit-animation-name: animatebottom;
+	-webkit-animation-duration: 2s;
+	animation-name: animatebottom;
+	animation-duration: 2s
+}
+@-webkit-keyframes animatebottom {
+	from {
+		bottom: -100px;
+		opacity: 0
+	}
+	to {
+		bottom: 0px;
+		opacity: 1
+	}
+}
+@keyframes animatebottom {
+	from {
+		bottom: -100px;
+		opacity: 0
+	}
+	to {
+		bottom: 0;
+		opacity: 1
+	}
+}
+#myDiv {
+	display: none;
+	text-align: center;
+}
+
 
 footer {
 	font-family; 'PTSans':

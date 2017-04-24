@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-<head>	
+
+<head>
 	<title>navigation menu</title>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE-edge">
@@ -9,24 +10,29 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylsheet" href="css/style.css">
 	<link rel="stylesheet" href="css/about.css">
- 	<script	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-	<script	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
-	</script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+	</script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<style>
-			image#uz_logo {
+		image#uz_logo {
 			height 100% width: auto;
 			display: in-line margin-top;
 			-10px;
- 	}
+		}
+	
 	</style>
-<title>Causes</title>
+	<title>Causes</title>
 </head>
 
-<body>
+<body onload="myFunction()" style="margin:0;">
+	<div id="loader"></div>
+	<div style="display:none;" id="myDiv" class="animate-bottom">
+		<h2>Featured Artists!</h2>
+	</div>
 	<style>
 		body {
-			padding-top: 80px;
+			padding-top: 100px;
 			/*gradient*/
 			background: #FF822E;
 			*background-image: linear-gradient(to top, #FF6517, #FF822E, #B9BBBA);
@@ -36,8 +42,17 @@
 			background: -o-linear-gradient(top, #FF6517 0%, ##B9BBBA 100%);
 			background: -ms-linear-gradient(top, #FF6517 0%, ##B9BBBA 100%);
 		}
+		
+		.media-left {
+			border: none;
+		}
+		
+		.media-right {
+			border: none;
+		}
 	</style>
 	<header>
+		<title>navigation menu</title>
 		<nav class="navbar navbar-inverse">
 			<div class="container-fluid">
 				<div class="navbar-header">
@@ -56,12 +71,12 @@
 						<li><a href="contact.html">Contact</a></li>
 					</ul>
 				</div>
-			</div>			
+			</div>
 		</nav>
 	</header>
-	<div style="background-color: #7F7F7F !important" class="jumbotron text-center">
+	<!--<div style="background-color: #7F7F7F !important" class="jumbotron text-center">
 		<h1>Featured Artists</h1> 
-	</div>
+	</div>-->
 	<div class="container">
 		<div class="media">
 			<div class="media-left">
@@ -69,7 +84,7 @@
 			</div>
 			<div class="media-body">
 				<h4 class="media-heading">caribbean craft-paper mache</h4>
-				<p>Designer Donna Karan was first introduced to carribean craft through the clinton foundation.  Instead of seeing the devastion of a third world country, she looked at haiti through the eyes of a designer. caribbean craft supplies jobs to haitian's who otherwise could not afford to support their families. Thecraft is paper mache and is sold through urben zen stores and other retailers.</p>
+				<p>Designer Donna Karan was first introduced to carribean craft through the clinton foundation. Instead of seeing the devastion of a third world country, she looked at haiti through the eyes of a designer. caribbean craft supplies jobs to haitian's who otherwise could not afford to support their families. The craft is paper mache and is sold through urben zen stores and other retailers.</p>
 			</div>
 		</div>
 		<!--<div class="media-right">
@@ -97,7 +112,7 @@
 		<div class="media">
 			<div class="media-body">
 				<h4 class="media-heading">paula coles-handbags</h4>
-				<p>poula coles cross body bags are one of kind and made from the scraps of a local t-shirt factory into art by local aritisans.  poula founded the design training center and production facility in haiti in collaboration with donna karan as a place for local artists to execute their crafts. the center is provides business opportunities and import/export services to aritisans. </p>
+				<p>poula coles cross body bags are one of kind and made from the scraps of a local t-shirt factory into art by local aritisans. poula founded the design training center and production facility in haiti in collaboration with donna karan as a place for local artists to execute their crafts. the center is provides business opportunities and import/export services to aritisans. </p>
 			</div>
 			<div class="media-right">
 				<img src="images/PaulaColes Bags.jpg" width="300" height="200">
@@ -125,8 +140,22 @@
 			</nav>
 		</div>
 	</footer>
+
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery.min.js"></script>
+	<script>
+		var myVar;
+
+		function myFunction() {
+
+			myVar = setTimeout(showPage, 3000);
+		}
+
+		function showPage() {
+			document.getElementById("loader").style.display = "none";
+			document.getElementById("myDiv").style.display = "block";
+		}
+	</script>
 </body>
 
 </html>
